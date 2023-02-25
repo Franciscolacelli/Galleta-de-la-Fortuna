@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo{
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.frases-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid rgb(255, 255, 255);
+  height: 250px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  margin: 50px;
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
+  border-radius: 500px 20% / 100px 80%;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  transition: 3s;
+}
+
+.frases-container:hover{
+  cursor: pointer;
+  box-shadow: 20px 20px 50px rgb(0, 0, 0);
+  transform: rotate(2deg);
+}
+
+.boton{
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50px 10% / 10px 40%;
+  transition: 3s;
+}
+
+.boton:hover{
+transform: rotate(-3deg);
+box-shadow: 5px 5px 30px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+  .frases-container{
+
+  width: 300px;
+  }
+}
